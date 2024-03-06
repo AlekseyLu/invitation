@@ -122,7 +122,7 @@ section {
 
 /* hero */
 .hero__bg {
-  background-image: url("/images/bg.png");
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -134,7 +134,7 @@ section {
   font-size: var(--fs42);
   font-weight: 400;
   color: var(--pink);
-  background-image: url("/images/pic-couple-heart.png");
+  background-image: url("../images/pic-couple-heart.png");
   background-repeat: no-repeat;
   background-position: center 150px;
 }
@@ -155,7 +155,7 @@ section {
 .about-title {
   margin-bottom: 32px;
   padding-top: 100px;
-  background-image: url("/images/pic-invite-h2.png");
+  background-image: url("../images/pic-invite-h2.png");
   background-repeat: no-repeat;
   background-position: center top;
   text-align: center;
@@ -186,8 +186,8 @@ section {
 
 .about__bg {
   padding-bottom: 50px;
-  background-image: url("/images/bg-invite-left.png"),
-    url("/images/bg-invite-right.png");
+  background-image: url("../images/bg-invite-left.png"),
+    url("../images/bg-invite-right.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 95px 70px, right 0;
   background-size: contain auto;
@@ -207,7 +207,7 @@ section {
   margin-bottom: 32px;
   padding-top: 90px;
   text-align: center;
-  background-image: url("/images/pic-story-h2.png");
+  background-image: url("../images/pic-story-h2.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -288,7 +288,7 @@ section {
 .day-title {
   padding-top: 90px;
   margin-bottom: 32px;
-  background-image: url("/images/pic-program-h2.png");
+  background-image: url("../images/pic-program-h2.png");
   background-repeat: no-repeat;
   background-position: center top;
   text-align: center;
@@ -310,8 +310,8 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 72px;
-  background-image: url("/images/timeline-ico.png"),
-    url("/images/timeline-line.png");
+  background-image: url("../images/timeline-ico.png"),
+    url("../images/timeline-line.png");
   background-repeat: no-repeat, repeat-y;
   background-position: center top, center top;
 }
@@ -373,8 +373,8 @@ section {
   margin-bottom: 40px;
   padding-top: 140px;
   padding-bottom: 30px;
-  background-image: url("/images/pic-register-h2.png"),
-    url("/images/pic-register-h2-bottom.png");
+  background-image: url("../images/pic-register-h2.png"),
+    url("../images/pic-register-h2-bottom.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   font-size: var(--fs35);
