@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Приглашение на свадьбу</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=7a41949e-8a83-4ddf-a9a8-fda81546181c&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#lovestory" class="nav__link">Love story</a>
+          </li>
+          <li class="nav__item">
+            <a href="#day" class="nav__link">Программа</a>
+          </li>
+          <li class="nav__item">
+            <a href="#ceremony" class="nav__link">Церемония</a>
+          </li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <button class="up">></button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__bg">
+            <h1 class="hero__title">
+              Олеся<br />и<br />
+              Алексей
+            </h1>
+            <p class="hero__date">19 июля 2024 г.</p>
+          </div>
+          <div class="timer"></div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about-title">Олеся и Алексей</h2>
+          <p class="about-text">Дорогие друзья!</p>
+          <p class="about-text">
+            Жить, любить, чувствовать. Однажды мы поняли, что нет ничего важнее
+            этого. И что идти дальше мы хотим только вместе. А теперь мечтаем,
+            чтобы день нашей свадьбы стал красивым и ярким событием на этом
+            увлекательном пути.
+          </p>
+          <p class="about-text">
+            Мы будем очень рады, если вы разделите этот счастливый день с нами.
+          </p>
+          <p class="about-text">Увидимся на нашей свадьбе!</p>
+          <div class="about__bg">
+            <img src="images/Olesya.jpg" alt="Невеста Олеся" class="image" />
+            <img src="images/Aleksey.jpg" alt="Жених Алексей" class="image" />
+          </div>
+        </div>
+      </section>
+      <section class="lovestory" id="lovestory">
+        <div class="container">
+          <div class="preview">
+            <button class="close">X</button>
+          </div>
+          <h2 class="lovestory-title">Love story</h2>
+          <ul class="list-image">
+            <li class="list-item">
+              <img src="/images/1.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/2.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/3.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/4.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/5.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/6.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/7.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/8.jpg" alt="#" class="list-img" />
+            </li>
+            <li class="list-item">
+              <img src="/images/9.jpg" alt="#" class="list-img" />
+            </li>
+          </ul>
+          <button class="btn-more">Показать ещё</button>
+        </div>
+      </section>
+      <section class="day" id="day">
+        <div class="container">
+          <h2 class="day-title">Программа свадебного дня</h2>
+          <ul class="day-list">
+            <li class="day-date">19 июля 2024 г.</li>
+            <li class="day-item">
+              <div class="block-time"><span class="time">09:00</span></div>
+              <div class="block-descr">
+                <p class="descr-title">Утро невесты</p>
+                <p class="descr-text">
+                  Фотосессия в отеле Radisson Collection Hotel
+                </p>
+                <p class="descr-text">
+                  Адрес:
+                  <a href="#" class="descr-link"
+                    >г. Такой-то, Улица Другая 1к1</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="day-item">
+              <div class="block-descr">
+                <p class="descr-title">Сборы жениха</p>
+                <p class="descr-text">
+                  Фотосессия в отеле Radisson Collection Hotel
+                </p>
+                <p class="descr-text">
+                  Адрес:
+                  <a href="#" class="descr-link"
+                    >г. Такой-то, Улица Другая 1к1</a
+                  >
+                </p>
+              </div>
+              <div class="block-time"><span class="time">09:30</span></div>
+            </li>
+            <li class="day-item">
+              <div class="block-time"><span class="time">18:00</span></div>
+              <div class="block-descr">
+                <p class="descr-title">Регистрация в ЗАГСе</p>
+                <p class="descr-text">Дворец бракосочетания № 2</p>
+                <p class="descr-text">
+                  Адрес:
+                  <a
+                    href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.374434%2C59.942091&mode=whatshere&whatshere%5Bpoint%5D=30.364846%2C59.945303&whatshere%5Bzoom%5D=16&z=13.19"
+                    class="descr-link"
+                    target="_blank"
+                    >г. Санкт-Петербруг, Фурштатская улица, 52</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="ceremony" id="ceremony">
+        <div class="container">
+          <h2 class="ceremony-title">Церемония</h2>
+
+          <a
+            class="ceremony-text"
+            href="https://yandex.ru/maps/org/dvorets_brakosochetaniya_2/1063007010/?ll=30.364871%2C59.945392&z=15"
+            >Дворец бракосочетания № 2</a
+          >
+
+          <p class="ceremony-text">
+            Россия, Санкт-Петербург, Фурштатская улица, 52
+          </p>
+        </div>
+      </section>
+      <div id="map"></div>
+    </main>
+    <footer class="footer">
+      <p>Олеся 🖤 Алексей</p>
+      <p>19 июля 2024 г.</p>
+    </footer>
+  </body>
+</html>
