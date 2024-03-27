@@ -79,11 +79,11 @@ photos.forEach((photo, ind) =>
 
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => {
+    const photo = document.querySelector(".list-item:last-child");
     if (window.screen.width <= 576) {
-      const photo = document.querySelector(".list-item:last-child");
       photo.style.display = "none";
     } else {
-      photos.style.display = "block";
+      photo.style.display = "block";
     }
   });
 });
