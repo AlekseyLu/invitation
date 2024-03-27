@@ -501,11 +501,11 @@ section:not(:first-child) {
 
 @media (max-width: 576px) {
   body {
-    background-position: center -315px;
+    background-position: center -425px;
   }
 
   .hero__bg {
-    margin-bottom: 505px;
+    margin-bottom: 360px;
   }
 
   .container {
