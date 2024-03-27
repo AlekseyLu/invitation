@@ -500,12 +500,19 @@ section:not(:first-child) {
 }
 
 @media (max-width: 576px) {
+  body {
+    background-position: center -315px;
+  }
+
+  .hero__bg {
+    margin-bottom: 505px;
+  }
+
   .container {
     padding: 0;
   }
 
   .timer {
-    top: -120px;
     width: 100%;
   }
 
@@ -537,7 +544,10 @@ section:not(:first-child) {
   }
 
   .about-text {
-    font-size: var(--fs35);
+    padding: 1rem;
+    font-size: var(--fs20);
+    line-height: 2rem;
+    margin-bottom: 0;
   }
 
   .list-image {
@@ -552,9 +562,22 @@ section:not(:first-child) {
   .day-item:nth-child(odd) {
     background-position: 500px top, 513px top;
   }
+
+  .ceremony-title {
+    padding-bottom: 0;
+  }
+
+  .ceremony-text {
+    font-size: var(--fs20);
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
+  section:not(:first-child) {
+    padding: 30px 0;
+  }
+
   .nav__list {
     position: absolute;
     left: 0;
