@@ -1,12 +1,24 @@
+@font-face {
+  font-family: "Sr";
+  src: url("/fonts/BadScript-Regular.ttf");
+}
+
 :root {
   --grey: #84898c;
-  --pink: #eb8791;
+  --pink: #11845f;
   --dark: #363838;
 
   --fs18: 18px;
   --fs20: 20px;
   --fs35: 35px;
   --fs42: 42px;
+
+  --ff: "Sr";
+}
+
+.test {
+  font-size: var(--fs20);
+  font-family: "Caveat", arial;
 }
 
 *,
@@ -19,6 +31,12 @@
 
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-image: url("/images/bg-first.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -34,7 +52,7 @@ img {
   width: 100%;
 }
 
-section {
+section:not(:first-child) {
   padding: 70px 0;
   border-bottom: 1px dotted var(--pink);
 }
@@ -63,7 +81,7 @@ section {
   font-size: var(--fs18);
   line-height: 100%;
   font-weight: 500;
-  color: var(--grey);
+  color: #fff;
   transition: color 0.2s ease-in-out;
 }
 .nav__link:hover {
@@ -97,6 +115,7 @@ section {
 
 .nav__list.active {
   transform: translateX(0);
+  z-index: 1000;
 }
 
 .up {
@@ -122,21 +141,17 @@ section {
 
 /* hero */
 .hero__bg {
-  background-image: url("../images/bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
+  margin-bottom: 880px;
+  padding-bottom: 50px;
 }
 
 .hero__title {
-  padding-bottom: 70px;
   text-align: center;
+  font-family: var(--ff);
   font-size: var(--fs42);
+  line-height: 70px;
   font-weight: 400;
-  color: var(--pink);
-  background-image: url("../images/pic-couple-heart.png");
-  background-repeat: no-repeat;
-  background-position: center 150px;
+  color: #fff;
 }
 
 .hero__date {
@@ -144,7 +159,61 @@ section {
   font-size: var(--fs18);
   line-height: 100%;
   font-weight: 400;
-  color: var(--grey);
+  color: #fff;
+}
+
+/* timer */
+.timer {
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: max-content;
+  border-radius: 16px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.timer__items {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  font-size: 4em;
+}
+
+.timer__item {
+  position: relative;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  padding: 1.5rem;
+  padding-bottom: 25px;
+  min-width: 60px;
+  border-radius: 16px;
+  background-color: rgba(17, 132, 95, 0.1);
+  text-align: center;
+  font-family: "Helvetica";
+  line-height: 1;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  transform: translateX(-50%);
+}
+
+.timer__divider {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  background-color: #333;
+  opacity: 0.25;
 }
 
 /* about */
@@ -154,23 +223,18 @@ section {
 
 .about-title {
   margin-bottom: 32px;
-  padding-top: 100px;
-  background-image: url("../images/pic-invite-h2.png");
-  background-repeat: no-repeat;
-  background-position: center top;
   text-align: center;
-  font-size: var(--fs35);
+  font-size: var(--fs42);
   line-height: 100%;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--pink);
 }
 
 .about-text {
   margin: 0 auto 32px;
-  max-width: 678px;
   text-align: center;
-  font-size: var(--fs18);
-  line-height: 100%;
+  font-size: var(--fs35);
+  line-height: var(--fs42);
   font-weight: 400;
   color: var(--grey);
 }
@@ -186,11 +250,6 @@ section {
 
 .about__bg {
   padding-bottom: 50px;
-  background-image: url("../images/bg-invite-left.png"),
-    url("../images/bg-invite-right.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 95px 70px, right 0;
-  background-size: contain auto;
 }
 
 .image:first-child {
@@ -205,11 +264,9 @@ section {
 
 .lovestory-title {
   margin-bottom: 32px;
-  padding-top: 90px;
   text-align: center;
-  background-image: url("../images/pic-story-h2.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  font-size: var(--fs42);
+  color: var(--pink);
 }
 
 .preview {
@@ -255,7 +312,6 @@ section {
   margin: 0 auto 32px;
   padding: 10px;
   max-width: 768px;
-  background-color: rgba(235, 135, 145, 0.3);
 }
 
 .list-img {
@@ -286,21 +342,17 @@ section {
 }
 
 .day-title {
-  padding-top: 90px;
   margin-bottom: 32px;
-  background-image: url("../images/pic-program-h2.png");
-  background-repeat: no-repeat;
-  background-position: center top;
   text-align: center;
   font-size: var(--fs35);
   line-height: 100%;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--pink);
 }
 
 .day-date {
   margin-bottom: 50px;
-  font-size: var(--fs18);
+  font-size: var(--fs35);
   line-height: 100%;
   font-weight: 400;
   color: var(--dark);
@@ -310,10 +362,9 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 72px;
-  background-image: url("../images/timeline-ico.png"),
-    url("../images/timeline-line.png");
-  background-repeat: no-repeat, repeat-y;
-  background-position: center top, center top;
+  background-image: url("../images/timeline-line.png");
+  background-repeat: repeat-y;
+  background-position: center top;
 }
 
 .day-item div:first-child {
@@ -371,21 +422,16 @@ section {
 
 .ceremony-title {
   margin-bottom: 40px;
-  padding-top: 140px;
   padding-bottom: 30px;
-  background-image: url("../images/pic-register-h2.png"),
-    url("../images/pic-register-h2-bottom.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  font-size: var(--fs35);
+  font-size: var(--fs42);
   line-height: 100%;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--pink);
 }
 
 .ceremony-text {
   display: block;
-  font-size: var(--fs18);
+  font-size: var(--fs35);
   line-height: 100%;
   font-weight: 400;
   color: var(--dark);
@@ -413,6 +459,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .timer {
+    padding: 1rem 0;
+  }
+
   .about__bg {
     background-position: 20px, 590px;
   }
@@ -456,6 +506,11 @@ section {
 
   section {
     padding: 40px 0;
+  }
+
+  .timer__items {
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .about__bg {
@@ -506,6 +561,7 @@ section {
     transform: translateX(20px);
     justify-content: center;
     margin: 0;
+    z-index: 1001;
   }
 
   .burger.active .line:nth-child(1) {
