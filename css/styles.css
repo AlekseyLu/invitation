@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Sr";
-  src: url("/fonts/BadScript-Regular.ttf");
+  src: url("../fonts/BadScript-Regular.ttf");
 }
 
 :root {
@@ -14,11 +14,6 @@
   --fs42: 42px;
 
   --ff: "Sr";
-}
-
-.test {
-  font-size: var(--fs20);
-  font-family: "Caveat", arial;
 }
 
 *,
