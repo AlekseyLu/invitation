@@ -34,7 +34,7 @@ html {
 }
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  background-image: url("/images/bg-first.jpg");
+  background-image: url("../images/bg-first.jpg");
   background-position: center top;
   background-repeat: no-repeat;
 }
