@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Sr";
-  src: url("../fonts/BadScript-Regular.ttf");
+  src: url("../fonts/BadScript-Regular.ttf") format("truetype");
 }
 
 :root {
