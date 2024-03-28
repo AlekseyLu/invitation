@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Sr";
-  src: url("../fonts/BadScript-Regular.ttf") format("truetype");
+  src: url("/fonts/BadScript.ttf") format("truetype");
 }
 
 :root {
@@ -28,7 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Sr", "Arial", sans-serif;
   background-image: url("../images/bg-first.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -455,7 +455,19 @@ section:not(:first-child) {
 
 @media (max-width: 768px) {
   .timer {
-    padding: 1rem 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .timer__items {
+    gap: 0.5rem;
+  }
+
+  .timer__item {
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
   }
 
   .about__bg {
@@ -505,21 +517,6 @@ section:not(:first-child) {
 
   .container {
     padding: 0;
-  }
-
-  .timer {
-    width: 100%;
-  }
-
-  .timer__items {
-    gap: 0.5rem;
-  }
-
-  .timer__item {
-    margin: 0;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    font-size: 3rem;
   }
 
   .timer__item:last-child {
